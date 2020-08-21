@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace AppCenterTest
 {
@@ -23,6 +26,9 @@ namespace AppCenterTest
         public MainWindow()
         {
             InitializeComponent();
+            AppCenter.Start("5b13a38b-1ca1-48a4-bc71-ddd24c1345be",
+                   typeof(Analytics), typeof(Crashes));
+
         }
     }
 }

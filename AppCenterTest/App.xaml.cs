@@ -5,6 +5,9 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace AppCenterTest
 {
@@ -13,5 +16,6 @@ namespace AppCenterTest
     /// </summary>
     public partial class App : Application
     {
+
     }
 }
